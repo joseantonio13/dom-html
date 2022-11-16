@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   body{
+    background-color: rgb(109, 106, 106);
+    font:normal 18pt arial;
+  
+   }
+</style>
+
+
+<body>
+
+
+<h1> exercicios de DOM </h1>
+
+<p> aqui está o resultado </p>
+<p> aprendendo a usar o <strong> DOM </strong> em JS </p>
+    
+<div> clique aqui ! </div>
+
+<input id="btn" type="button" onclick="click()" value="Botão clicavél">
+<br>
+
+
+<script>
+
+function click(){
+    alert("olá");
+}
+
+
+window.document.write("Olá \n") //Isso escreve dentro do HTML que vc abriu 
+
+var p1 = window.document.getElementsByTagName('p')[1]
+window.document.write ('está escrito assim: ' + p1.innerText);
+p1.style.color = 'blue'
+//pega o elemento por a tag name como escolhi 'p' ele vai por o que está mais a cima, o primeiro sempre é '0' depois '1'.
+
+var corpo = window.document.body
+corpo.style.background = 'rgb(109, 106, 106)'
+
+window.alert (p1.innerText); // innerHTML traz o código html para o alert mesmo que ele tenha tag semantica.
+
+// pode ser feito seleção por ID's com o getElementById ou name, class e selector
+
+
+//var click = window.document.getElementById("clique");
+
+//click.innerText = 'carregando'  // pegando um elemento pelo id e modificando o texto e background 
+
+
+
+// queryselector é um metodo prático para acessar os Id's, Div's do seu DOM,  DOM é tipo a base da sua janela do navegador.
+
+
+</script>
+
+</body>
+</html>

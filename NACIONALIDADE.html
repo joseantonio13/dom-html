@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+
+
+    <h1> Exercicio de nacionalidade </h1>
+
+    <p> Selecione o pais que nasceu. </p>
+
+
+
+    <button id="btn">Brasileiro</button>
+    
+    <button id="btn2">Outros</button>
+
+    <h1 id="text1"></h1>
+    <h1 id="text2"></h1>
+  
+
+
+
+
+    <script>
+
+        let btn_element = document.getElementById("btn");
+  
+        btn_element.addEventListener("click", () => {
+            document.getElementById("text1")
+                .innerHTML = "Vc é brasileiro";
+        })
+  
+ 
+        let btn_element2 = document.getElementById("btn2");
+
+            btn_element2.addEventListener("click", ()=>{
+                document.getElementById("text2").innerHTML = "Você é estrangeiro."
+            })
+
+    
+    </script>
+
+
+</body>
+  
+</html>
